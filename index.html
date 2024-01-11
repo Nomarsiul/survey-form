@@ -1,0 +1,70 @@
+<body>
+    <link rel="stylesheet" href="styles.css" />
+    <h1 id="title">Online shopping habits</h1>
+    <p id="description">This is a short survey, that will generate information about the online shopping habits of
+        citizens living in Laland.</p>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label" name="nombre(s)">Name: <input id="name" ; type="text"
+                    placeholder="Please enter your full name" ; name="nombre-completo" required></input></label>
+            <label id="email-label" name="email">Email: <input id="email" ; type="email"
+                    placeholder="Please enter your email" ; name="email" required></input></label>
+            <label id="number-label">Age (in years): <input id="number" ; type="number" ; min="18" ; max="70" ;
+                    placeholder="Please enter your age" required></input></label>
+        </fieldset>
+        <fieldset>Do you shop online?
+            <label for="yes"><input id="yes" type="radio" name="si-no" value="Yes" class="inline">Yes</input></label>
+            <label for="no"><input id="no" type="radio" name="si-no" value="no" class="inline">No</input></label>
+        </fieldset>
+        <p>If you answer was <b>NO</b> the above question, please do not continue and close the survey. Thanks for your
+            time.</p>
+        <fieldset> How often do you buy online?
+            <select id="dropdown">
+                <option value="1">(Select one)</option>
+                <option value="2">Once a week</option>
+                <option value="3">Once every two weeks</option>
+                <option value="4">Once every month</option>
+                <option value="5">Once every six months</option>
+            </select>
+            <p>Or if you prefer, can you give us a rough estimate of how many times do you buy online in a monthly basis
+                on average</p>
+            </label>
+            <label for="ocasions">
+                <textarea id="ocasions" name="times" rows="3" cols="3"
+                    placeholder="On average I buy like three times a month..."></textarea>
+            </label>
+
+        </fieldset>
+        <fieldset> How secure do you feel buying online with a credit card?
+            <label for="very-secure"><input id="very-secure" type="radio" name="secure-type" value="very-secure"
+                    class="inline">Very Secure</input></label>
+            <label for="regular-secure"><input type="radio" name="secure-type" value="regular-secure"
+                    class="inline">Regular Secure</input></label>
+            <label for="not-secure"><input type="radio" name="secure-type" value="not-secure" class="inline">Not
+                Secure</input></label>
+        </fieldset>
+        <fieldset> How much money on average do you spend each time that you make a purchase online?
+            <label><input type="radio" value="less-than-25" name="expense" class="inline"></input> Less than $25</label>
+            <label><input type="radio" value="26to50" name="expense" class="inline"></input> $26 to $50</label>
+            <label><input type="radio" value="51to75" name="expense" class="inline"></input> $51 to $75</label>
+            <label><input type="radio" value="76to100" name="expense" class="inline"></input> $76 to $100</label>
+            <label><input type="radio" value="more-than-100" name="expense" class="inline"></input> More than
+                $100</label>
+        </fieldset>
+        <fieldset> What are the main categories of things that you buy online? (check all that apply)
+            <label><input type="checkbox" value="groceries" name="expense"> Groceries</input></label>
+            <label><input type="checkbox" value="clothes" name="expense"></input> clothes</label>
+            <label><input type="checkbox" value="jewelry" name="expense"></input> Jewelry</label>
+            <label><input type="checkbox" value="shoes" name="expense"></input> Shoes</label>
+            <label><input type="checkbox" value="other" name="expense"></input> Other</label>
+        </fieldset>
+        <fieldset> Do you like to give us additional comments about your shopping online experience?
+            <textarea name="comments" rows="4" cols="30">Convenience, peace of mind, etc.</textarea>
+        </fieldset>
+        <label for="terms-and-conditions">
+            <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I
+            accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+        </label>
+        <input id="submit" type="submit" ; value="Submit"></input>
+    </form>
+</body>
